@@ -1,0 +1,90 @@
+﻿@model IEnumerable<AgriCultureWeb.Models.WorkShop>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #CA9703;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+            width: 90%;
+            margin: auto;
+            max-width: 1200px; /* Limit max width for large screens */
+        }
+
+        .grid-item {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+            .grid-item:hover {
+                transform: scale(1.05);
+            }
+
+        p {
+            text-align: center;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .footer-container {
+            text-align: center;
+            background: #CA9703;
+            color: #fff;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to  Agricultures Workshop</h1>
+    </header>
+
+    <div class="grid-container">
+        <!-- Manually add or edit these div blocks to include new images -->
+        <div>
+            <img class='grid-item' src="~/image/picture1.jpg" /> 
+            <p>Farm Land and Pigs</p>
+        </div>
+        <div>
+            <img class='grid-item' src="~/image/solarpanels.jpg" />  
+            <p>Solar Pannels</p>
+        </div>
+        <div>
+            <img class='grid-item' src="~/image/truck.jpg" />
+            <p>Farmer Trucks</p>
+        </div>
+        <div>
+            <img class='grid-item'src="~/image/threshingmachine.jpg" />
+            <p>Threshing Machine</p>
+        </div>
+    </div>
+
+  
+</body>
+</html>
+
